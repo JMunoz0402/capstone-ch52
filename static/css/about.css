@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Centering Utility Classes */
+.center-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 10%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.about-image-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Mission, Vision, About Section */
+.mission-vision-us-section {
+    padding: 50px 10%;
+    background-color: #eef2f3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Heading Styles */
+.mission-vision-us-section h2 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.8rem;
+    color: #0056b3;
+    margin-top: 20px;
+}
+
+/* Small Images Next to Headings */
+.mission-vision-us-section h2::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Specific Images for Each Section */
+.mission-vision-us-section h2:nth-of-type(1)::before {
+    background-image: url('/static/images/mission-icon.png');
+}
+
+.mission-vision-us-section h2:nth-of-type(2)::before {
+    background-image: url('/static/images/vision-icon.png');
+}
+
+.mission-vision-us-section h2:nth-of-type(3)::before {
+    background-image: url('/static/images/about-icon.png');
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image-container img {
+        width: 80%;
+    }
+
+    .mission-vision-us-section h2 {
+        flex-direction: column;
+    }
+}
+
