@@ -12,19 +12,22 @@
     <link rel="stylesheet" href="{% static 'css/about.css' %}">
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
     <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'css/success.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
     <title>RG Electric</title>
 </head>
 <body>
     <div class="body">
+        
         <header>
             <div class="logo-banner">
                 <div class="logo">
                     <img src="{% static 'images/logo2.webp' %}" alt="Logo">
                 </div>
             
-            <nav>
+            
                 <!-- Hamburger button -->
-                <input type="checkbox" id="nav-check">
+                <nav>
                 <div class="nav-btn">
                     <label for="nav-check">
                         <span></span>
@@ -39,12 +42,10 @@
                     <a href="{% url 'services' %}">Services</a>
                     <a href="{% url 'gallery' %}">Gallery</a>
                     <a href="{% url 'contact' %}">Contact</a>
-                </div>
-                
-                <div class="nav-contact center-row">
-                    <p>📞 <a href=#>(619) 456-7890</a></p>
-                    <p>📧 <a href="{% url 'contact' %}">info@rgelectric.com</a></p>
-                    <p> <a href=#>Lic: 1234567</a></p>
+        
+                    <p> 📞 <a href=#>(619) 456-7890</a></p>
+                    <p> 📧 <a href="{% url 'contact' %}">info@rgelectric.com</a></p>
+                    <p> <a href=#> Lic: 1234567</a></p>
                 </div>
             </nav>
         </header>

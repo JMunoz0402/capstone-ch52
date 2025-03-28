@@ -1,0 +1,6 @@
+/* Tablet */
+@media(max-width:1007px) {
+    html {
+        font-size: 12px;
+    }
+}
