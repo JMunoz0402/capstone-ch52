@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@0,400;0,700;1,400;1,700&family=Roboto:wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="stylesheet" href="{% static 'css/services.css' %}">
     <link rel="stylesheet" href="{% static 'css/about.css' %}">
@@ -14,20 +18,22 @@
     <link rel="stylesheet" href="{% static 'css/contact.css' %}">
     <link rel="stylesheet" href="{% static 'css/success.css' %}">
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
     <title>RG Electric</title>
 </head>
 <body>
     <div class="body">
         
+        <!-- Header Section -->
         <header>
             <div class="logo-banner">
                 <div class="logo">
-                    <img src="{% static 'images/logo2.webp' %}" alt="Logo">
+                    <img src="{% static 'images/logo2.webp' %}" alt="RG Electric Logo">
                 </div>
-            
-            
-                <!-- Hamburger button -->
-                <nav>
+            <div>
+
+            <!-- Navigation -->
+            <nav>
                 <div class="nav-btn">
                     <label for="nav-check">
                         <span></span>
@@ -42,18 +48,18 @@
                     <a href="{% url 'services' %}">Services</a>
                     <a href="{% url 'gallery' %}">Gallery</a>
                     <a href="{% url 'contact' %}">Contact</a>
-        
-                    <p> 📞 <a href=#>(619) 456-7890</a></p>
-                    <p> 📧 <a href="{% url 'contact' %}">info@rgelectric.com</a></p>
-                    <p> <a href=#> Lic: 1234567</a></p>
+
+                    <p>📞 <a href="#">(619) 456-7890</a></p>
+                    <p>📧 <a href="{% url 'contact' %}">info@rgelectric.com</a></p>
+                    <p><a href="#">Lic: 1234567</a></p>
                 </div>
             </nav>
         </header>
 
-        
+        <!-- Main Content -->
         <main>
             {% block content %}
-            {% endblock content %}
+            {% endblock %}
         </main>
 
         <!-- Footer Section -->
@@ -71,5 +77,6 @@
     </div>
 </body>
 </html>
+
 
 

@@ -7,7 +7,8 @@ from .models import Gallery
 
 # Create your views here.
 def home(request):
-    return render(request, 'pages/home.html')
+    form = ContactForm()
+    return render(request, 'pages/home.html', {"form":form})
 
 def about(request):
     return render(request, 'pages/about.html')

@@ -1,5 +1,4 @@
 {% extends 'base.html' %}
-
 {% load static %}
 
 {% block content %}
@@ -8,5 +7,7 @@
 <div class="thank-you-container">
     <h2>Thank You for Contacting Us!</h2>
     <p>We appreciate your inquiry and will get back to you within 1-2 business days.</p>
+    
+    <a href="{% url 'home' %}" class="home-button">Return Home</a>
 </div>
 {% endblock %}

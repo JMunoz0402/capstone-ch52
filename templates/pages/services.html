@@ -1,33 +1,33 @@
 {% extends 'base.html' %}
-
 {% load static %}
 
 {% block content %}
-    <section class="supervisor-section">
-    <h2>In Field Supervisors </h2>
+<section class="supervisor-section">
+    <h2>In Field Supervisors</h2>
     <div class="gallery">
-    <div class="gallery-item">
-        <img src="{% static 'images/residential.jpeg' %}" alt="Work Example 1">
-        <p>Residential Supervisors</p>
+        <div class="gallery-item">
+            <img src="{% static 'images/residential.jpeg' %}" alt="Work Example 1">
+            <p>Residential Supervisors</p>
+        </div>
+        <div class="gallery-item">
+            <img src="{% static 'images/commercial.jpeg' %}" alt="Work Example 2">
+            <p>Commercial Supervisor</p>
+        </div>
+        <div class="gallery-item">
+            <img src="{% static 'images/industrial.jpeg' %}" alt="Work Example 3">
+            <p>Industrial Supervisor</p>
+        </div>
+        <div class="gallery-item">
+            <img src="{% static 'images/solar.jpeg' %}" alt="Work Example 4">
+            <p>Solar Panel Supervisor</p>
+        </div>
     </div>
-    <div class="gallery-item">
-        <img src="{% static 'images/commercial.jpeg' %}" alt="Work Example 2">
-        <p>Commercial Supervisor</p>
-    </div>
-    <div class="gallery-item">
-        <img src="{% static 'images/industrial.jpeg' %}" alt="Work Example 3">
-        <p>Industrial Supervisor</p>
-    </div>
-    <div class="gallery-item">
-        <img src="{% static 'images/solar.jpeg' %}" alt="Work Example 4">
-        <p>Solar Panel Supervisor</p>
-    </div>
-</div>
+</section>
+
 <section class="services-section">
     <h1>Our Services</h1>
     <a href="{% url 'contact' %}" class="cta-button">Request an Estimate</a>
-    
-    
+
     <div class="services-list">
         <div class="service-item">
             <h2>Residential Electrical Services</h2>
@@ -46,8 +46,9 @@
             <p>We offer specialized services for installation of solar panels.</p>
         </div>
     </div>
+
     <a href="{% url 'contact' %}" class="cta-button">Request an Estimate</a>
 </section>
-
 {% endblock %}
+
 
