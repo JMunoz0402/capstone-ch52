@@ -1,6 +1,6 @@
 /* Hero Section */
 .hero {
-    background: url("{% static 'images/banner.jpeg' %}") no-repeat center center/cover;
+    
     height: 80vh;
     display: flex;
     align-items: center;
